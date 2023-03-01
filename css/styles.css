@@ -1,6 +1,5 @@
 :root {
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --page-background: #ffffff;
 }
 .list {
   list-style: none;
@@ -11,32 +10,31 @@
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
 }
 /* ================ COMPONENTS ================= */
 .logo-link {
-  font-family: var(--secondary-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.34;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #4d5ae5;
 }
 
-.logo-link-first {
+.logo-link-dark {
   color: #2e2f42;
 }
 
-.logo-link-second {
+.logo-link-white {
   color: #f4f4fd;
 }
+
 /* ================ /COMPONENTS ================= */
 
 /* ================ HEADER ================== */
-.menu-item {
+.menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -48,29 +46,17 @@ body {
   font-style: normal;
 }
 
-.contact-mail {
-  font-weight: 400;
+.contact-info {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.contact-number {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: flex-end;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
 .menu-link:hover,
 .menu-link:focus,
-.contact-mail:hover,
-.contact-mail:focus {
+.contact-info:hover,
+.contact-info:focus {
   color: #404bbf;
 }
 /* ================ /HEADER ================== */
@@ -81,10 +67,11 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .modal-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -93,13 +80,73 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   background: #4d5ae5;
+  cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background: #404bbf;
 }
+
+.hero {
+  background: #2e2f42;
+}
 /* ================ /HERO IMAGE ================= */
+
+/* ================ SECTIONS  ================= */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.skills-section .work-section {
+  background: #ffffff;
+}
+.team-section {
+  background: #f4f4fd;
+}
+/* ================ /SECTIONS  ================= */
+
+/* ================ FOOTER ================= */
+.footer-text {
+  color: #e7e9fc;
+}
+.footer-page {
+  background: #2e2f42;
+}
+/* ================ /FOOTER ================= */
+
+/* ================ PORTFOLIO SECTION ================= */
+.filters-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background: #f4f4fd;
+  cursor: pointer;
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: #ffffff;
+  background: #404bbf;
+}
+/* ================ /PORTFOLIO SECTION ================= */
